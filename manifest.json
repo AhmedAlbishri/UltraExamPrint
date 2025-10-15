@@ -1,0 +1,32 @@
+{
+  "manifest_version": 3,
+  "name": "UltraExamPrint",
+  "description": "Print full Blackboard Ultra exam attempts with native styling—no screenshots.",
+  "version": "1.0.0",
+  "action": {
+    "default_title": "UltraExamPrint",
+    "default_icon": {
+      "16": "icons/icon16.png",
+      "32": "icons/icon32.png"
+    }
+  },
+  "icons": {
+    "16": "icons/icon16.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  },
+  "permissions": ["activeTab"],
+  "host_permissions": ["https://lms.seu.edu.sa/*"],  
+  "content_scripts": [{
+    "matches": ["https://lms.seu.edu.sa/*"],
+    "js": ["content.js"],
+    "run_at": "document_idle"
+  }],
+  "background": { "service_worker": "background.js" },
+  "commands": {
+    "print_full_exam": {
+      "suggested_key": { "default": "Ctrl+Shift+H" },
+      "description": "Print full Ultra assessment"
+    }
+  }
+}
