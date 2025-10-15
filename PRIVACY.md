@@ -2,7 +2,11 @@
 
 UltraExamPrint does **not collect, transmit, or store any personal data**.
 
-The extension runs entirely in the user’s browser and processes page content locally to prepare a print-friendly version of Blackboard Ultra exams.  
-It does not send any information to external servers, does not use cookies or analytics, and does not share data with any third party.
+The extension operates entirely within the user's browser. It processes the content of the currently open Blackboard Ultra exam page locally to generate a print-friendly view.
 
-For questions or feedback, please contact the project maintainer through the GitHub repository.
+- No user information is collected.
+- No analytics or telemetry are used.
+- No network requests are made beyond the Blackboard page already loaded in the browser.
+- No data is shared with any third party.
+
+If you have questions or concerns, please open an issue on the [GitHub repository](https://github.com/AhmedAlbishri/UltraExamPrint).
